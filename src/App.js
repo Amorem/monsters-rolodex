@@ -10,7 +10,7 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    const result = await fetch("http://jsonplaceholder.typicode.com/users");
+    const result = await fetch("https://jsonplaceholder.typicode.com/users");
     const resJSON = await result.json();
     this.setState({
       monsters: resJSON
